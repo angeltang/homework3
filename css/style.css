@@ -15,6 +15,9 @@ body{
   font-family: 'Andika', sans-serif;
   background-size: cover ;
   background-position: center;
+  background-image: url(../images/pigeon-background.JPEG);
+  background-color:  #dddddd;
+  background-size: cover;
 }
 
 main{
@@ -24,6 +27,8 @@ main{
 h1{
   color: #c12258;
   font-size: 2em;
+  text-align: center;
+  line-height: 2;
 }
 
 caption{
@@ -31,44 +36,87 @@ caption{
 }
 
 p{
-
+  padding-top: 15px;
 }
 
-a{
+a:link{
+  color: #B21F50;
+  font-size: 16px;
+  text-decoration: wavy underline;
+}
 
+:focus{
+  border: 3px dashed #417243;
 }
 
 table{
     border: 2px solid #000000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .colhead{
   background-color: #7e0830;
   color: #FFFFFF;
+  min-width: 125px;
+  padding: 10px;
+  text-transform: uppercase;
 }
 
 .rowhead{
-
+  border-top: 2px solid #000000;
+  border-right: 2px solid #000000;
+  vertical-align: middle;
 }
 
 td{
-  padding: 15px;
+  padding: 10px;
+  border-top: 2px solid #000000;
+  vertical-align: middle;
 }
 
-tr{
+tr:nth-child(even) {
+  background: #d1d1d1;
+}
 
+tr:hover{
+  background-color: rgba(126, 8, 48, 0.25)
 }
 
 *{
 
 }
 
-thead tr:first-child th:first-child{}
+thead th:first-child {
+  border-top-left-radius: 10px;
+}
+
+th:last-child {
+  border-top-right-radius: 10px;
+}
+
+tbody tr:last-child th:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+
 
 footer{
   width:100%;
   background:#000000;
   text-align:center;
   color: #FFFFFF;
+  min-height: 75px;
+  bottom: 0;
+  position: sticky;
 }
 
