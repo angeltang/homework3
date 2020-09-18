@@ -88,10 +88,6 @@ tr:hover{
   background-color: rgba(126, 8, 48, 0.25)
 }
 
-*{
-
-}
-
 thead th:first-child {
   border-top-left-radius: 10px;
 }
