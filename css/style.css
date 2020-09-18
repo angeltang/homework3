@@ -113,6 +113,6 @@ footer{
   color: #FFFFFF;
   min-height: 75px;
   bottom: 0;
-  position: sticky;
+  position: fixed;
 }
 
